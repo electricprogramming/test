@@ -1,4 +1,4 @@
-const utils = require('./utils/utils.json');
+import utils from './utils/utils.json'
 
 console.log(utils.exampleKey); // Output: exampleValue
 console.log(utils.anotherKey);  // Output: 42
