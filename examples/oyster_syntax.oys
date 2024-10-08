@@ -1,0 +1,32 @@
+functionName('args')
+class.methodName('args')
+if(
+  user.confirm(),
+  () => {
+    doSomething()
+  },
+  () => {
+    doSomethingElse()
+  }
+)
+--| This is a comment. Takes up exactly one full line and must start with the three chars `--|`
+classManager.createClass({
+  name: 'myClass',
+  properties: ['value'],
+  constructor: (value) => {
+    this.value = value
+  },
+  staticMethods: {}
+  instanceMethods: {
+    getVal: () => {
+      return this.value
+    }
+  }
+})
+classManager.createInstance({
+  className: 'myClass',
+  instanceName: 'instance',
+  arguments: {
+    value: 12
+  }
+})
