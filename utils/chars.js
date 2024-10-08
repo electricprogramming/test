@@ -1,8 +1,7 @@
 let chars = {
   whitespace: {
     space: ' ',
-    newLine: `
-`,
+    newLine: `\n`,
     zeroWidth: '‎'
   },
   punctuation: {
@@ -30,6 +29,17 @@ let chars = {
   slash: '/',
   backslash: '\\',
   backtick: '`',
-}
-Object.seal(chars)
+};
+
+// Deep freeze the object to prevent any modification
+const deepFreeze = (obj) => {
+  Object.freeze(obj);
+  Object.keys(obj).forEach((key) => {
+    if (obj[key] && typeof obj[key] === 'object') {
+      deepFreeze(obj[key]);
+    }
+  });
+};
+
+deepFreeze(chars);
 export default chars;
