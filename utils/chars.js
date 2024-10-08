@@ -1,4 +1,4 @@
-import './deepFreezeObj'
+import './deepFreezeObj.js'
 let chars = {
   whitespace: {
     space: ' ',
