@@ -1,3 +1,4 @@
+import './deepFreezeObj'
 let chars = {
   whitespace: {
     space: ' ',
@@ -30,16 +31,5 @@ let chars = {
   backslash: '\\',
   backtick: '`',
 };
-
-// Deep freeze the object to prevent any modification
-const deepFreeze = (obj) => {
-  Object.freeze(obj);
-  Object.keys(obj).forEach((key) => {
-    if (obj[key] && typeof obj[key] === 'object') {
-      deepFreeze(obj[key]);
-    }
-  });
-};
-
-deepFreeze(chars);
+Object.deepFreeze(chars);
 export default chars;
