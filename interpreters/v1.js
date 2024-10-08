@@ -29,9 +29,9 @@ function runOysterV1(oysterCode = '') {
       throw new OysterError('Unexpected space in Oyster Script')
     } else if (currentChar === chars.whitespace.newLine) {
       throw new OysterError('Unexpected new line in Oyster Script')
-    } else if (currentChar === chars.brackets.rightCurly) {
+    } else if (currentChar === chars.parentheses.right) {
       throw new OysterError('Unexpected token }')
-    } else if (currentChar === chars.brackets.leftCurly) {
+    } else if (currentChar === chars.parentheses.left) {
       console.log(`currentFunction: ${currentFunction}`)
     } else if (currentChar === chars.punctuation.period) {
       console.log(`Class or Instance detected -- name: ${currentFunction}`)
