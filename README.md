@@ -49,3 +49,9 @@ classManager.createInstance{
 }
 ```
 For a more updated version, see the oyster_syntax.oys file in the '/examples' directory.
+# Hosting
+This repository is hosted on Vercel, therefore there is a vercel.json file, etc.  
+The website, as of last update, is <https://oyster-interpreter.vercel.app>.
+
+# File Setup
+This uses the _root_ as the main part of the repository instead of an 'src' or similar folder. Therefore, the
