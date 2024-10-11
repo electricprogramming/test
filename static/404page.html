@@ -15,11 +15,12 @@
             justify-content: center;
             align-items: center;
             overflow: hidden; /* Prevent scrolling */
+            position: relative; /* Position relative for absolute child */
         }
         img {
-            width: 100vw; /* Full width of the viewport */
-            height: 100vh; /* Full height of the viewport */
-            object-fit: cover; /* Scale image while preserving aspect ratio */
+            width: 100%; /* Full width of the viewport */
+            height: calc(100vh - 50px); /* Full height minus button space */
+            object-fit: contain; /* Scale image while preserving aspect ratio */
         }
         a {
             position: absolute; /* Position link at the bottom */
