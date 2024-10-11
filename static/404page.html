@@ -12,21 +12,24 @@
         }
         body {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             overflow: hidden; /* Prevent scrolling */
         }
         img {
-            max-width: 100%;
-            max-height: calc(100vh - 50px); /* Adjust for link space */
-            object-fit: contain; /* Scales the image while preserving aspect ratio */
+            width: 100vw; /* Full width of the viewport */
+            height: 100vh; /* Full height of the viewport */
+            object-fit: cover; /* Scale image while preserving aspect ratio */
         }
         a {
-            margin-top: 10px; /* Space between image and link */
+            position: absolute; /* Position link at the bottom */
+            bottom: 20px; /* Space from the bottom */
             text-decoration: none;
             color: #0070f3; /* Link color */
             font-size: 18px; /* Font size */
+            background: rgba(255, 255, 255, 0.7); /* Optional: semi-transparent background for readability */
+            padding: 10px; /* Padding around the link */
+            border-radius: 5px; /* Rounded corners */
         }
     </style>
 </head>
