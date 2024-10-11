@@ -1,8 +1,12 @@
 {
   "rewrites": [
     {
+      "source": "/"
+      "destination": "/static/404page.html"
+    },
+    {
       "source": "/(.*)",
-      "destination": "/static/404.html"
+      "destination": "/static/404page.html"
     }
   ]
 }
