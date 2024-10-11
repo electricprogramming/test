@@ -8,45 +8,38 @@ Oyster is loosely based on JavaScript, and uses objects and arrays identically. 
 ## Syntax
 Oyster's syntax looks something like this as of last update.
 ```oyster
-functionName{
-  args: args
-}
-class.methodName{
-  args: args
-}
-if{
-  condition: confirm{},
-  ifTrue: () => {
-    doSomething{}
+functionName('args')
+class.methodName('args')
+if(
+  user.confirm(),
+  () => {
+    doSomething()
   },
-  ifFalse: () => {
-    doSomethingElse{},
+  () => {
+    doSomethingElse()
   }
-}
---| This is a comment. |--
---| This is
-also
-a
-comment |--
-classManager.createClass{
+)
+--| This is a comment. Takes up exactly one full line and must start with the three chars `--|`
+classManager.createClass({
   name: 'myClass',
   properties: ['value'],
   constructor: (value) => {
     this.value = value
   },
-  methods: [
+  staticMethods: {}
+  instanceMethods: {
     getVal: () => {
       return this.value
     }
-  ]
-}
-classManager.createInstance{
+  }
+})
+classManager.createInstance({
   className: 'myClass',
   instanceName: 'instance',
   arguments: {
     value: 12
   }
-}
+})
 ```
 For a more updated version, see the oyster_syntax.oys file in the '/examples' directory.
 # Hosting
