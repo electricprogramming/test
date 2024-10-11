@@ -1,6 +1,6 @@
 # Oyster
 Oyster is a new, lightweight programming language designed to be easy to learn in almost no time at all. It is similar to Scratch, but is text-based and is not designed for a 'game engine.'
-The main highlight of Oyster is that it has NO KEYWORDS. This means that everything is either a comment, class, function, or value.
+The main highlight of Oyster is that it has NO KEYWORDS. This means that everything is either a comment, function, class method, or value.
 ### File Extension
 Oyster uses the .oys file extension. If you have a suggestion to change this or it is used somewhere else, open an issue.
 ## Inspiration
