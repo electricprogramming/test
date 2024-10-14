@@ -1,3 +1,4 @@
+import './deepFreezeObj.js'
 const map1 = {
   "English": "en",
   "Chinese": "zh",
