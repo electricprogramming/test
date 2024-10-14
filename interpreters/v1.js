@@ -1,6 +1,8 @@
 import repeat from '../utils/repeat.js';
-import chars from '../utils/chars.js';
 import OysterError from '../utils/chars.js';
+import chars from '../utils/chars.js';
+import languages from '../utils/languages.js';
+console.log(languages);
 function runOysterV1(oysterCode = '') {
   try {
     {
