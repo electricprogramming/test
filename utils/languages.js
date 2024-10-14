@@ -22,4 +22,13 @@ const reverseLanguages = {
     "ru": "Russian",
     "de": "German"
 }
-export {languages,reverseLanguages}
+const languages = {
+  getCodeByName: function(name) {
+    return languages[name];
+  },
+
+  getNameByCode: function(code) {
+    return reverseLanguages[code];
+  }
+};
+export default languages;
