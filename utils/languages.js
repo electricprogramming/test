@@ -1,6 +1,6 @@
 const languages = {
     "English": "en",
-    "Mandarin Chinese": "zh",
+    "Chinese": "zh",
     "Spanish": "es",
     "Hindi": "hi",
     "Arabic": "ar",
@@ -12,7 +12,7 @@ const languages = {
 }
 const reverseLanguages = {
     "en": "English",
-    "zh": "Mandarin Chinese",
+    "zh": "Chinese",
     "es": "Spanish",
     "hi": "Hindi",
     "ar": "Arabic",
