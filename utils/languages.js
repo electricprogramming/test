@@ -1,4 +1,4 @@
-const languages = {
+const map1 = {
     "English": "en",
     "Chinese": "zh",
     "Spanish": "es",
@@ -10,7 +10,7 @@ const languages = {
     "Russian": "ru",
     "German": "de"
 }
-const reverseLanguages = {
+const map2 = {
     "en": "English",
     "zh": "Chinese",
     "es": "Spanish",
@@ -24,11 +24,11 @@ const reverseLanguages = {
 }
 const languages = {
   getCodeByName: function(name) {
-    return languages[name];
+    return map1[name];
   },
 
   getNameByCode: function(code) {
-    return reverseLanguages[code];
+    return map2[code];
   }
 };
 export default languages;
