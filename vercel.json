@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/static/index.html"
+      "destination": "/pages/index.html"
     },
     {
       "source": "/(.*)",
-      "destination": "/static/404page.html"
+      "destination": "/pages/404page.html"
     }
   ]
 }
