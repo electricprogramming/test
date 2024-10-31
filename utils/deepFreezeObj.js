@@ -8,6 +8,5 @@ Object.deepFreeze = function(obj) {
       Object.deepFreeze(obj[key]);
     }
   });
-
   return obj;
 };
